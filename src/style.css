@@ -1,0 +1,99 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    background: #1e1a20;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+
+.section
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    font-size: 7vmin;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section:nth-child(odd)
+{
+    justify-content: flex-end;
+}
+
+.pane {
+    display: flex;
+    flex-direction: column;
+}
+.pane:nth-child(odd) {
+    width: 55%
+}
+
+.list {
+    margin-top: 24px;
+    list-style-type: none;
+    font-size: 48px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.list > li {
+    display: flex;
+    align-items: start;
+    gap: 12px
+}
+
+.list.companies {
+    gap: 24px;
+}
+
+.list.companies .strana-item {
+    grid-column: 1/3;
+}
+
+.list.skills > li {
+    color: #fa003f
+}
+
+.list.contacts {
+    grid-template-columns: 1fr;
+}
+
+.project-logo {
+    width: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.alfa {
+    object-fit: scale-down;
+    background-color: #fff;
+}
+
+.rvn {
+    background-color: #ffffff08;
+}
+
+.strana {
+    background-color: #fff;
+}
